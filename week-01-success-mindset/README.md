@@ -216,30 +216,39 @@ Choose books that improve:
    ![The Power of Your Mind](screenshots/image1.jpg)
 
 2. How to Make Your Faith Work by Pastor Chris Oyakhilome
+
    ![How to Make Your Faith Work](screenshots/image2.jpg)
 
 3. Recreating Your World by Pastor Chris Oyakhilome
+
    ![Recreating Your World](screenshots/image3.jpg)
 
 4. Atomic Habits by James Clear
+
    ![Atomic Habits](screenshots/image4.webp)
 
 5. Boundaries by Dr. Henry Cloud and Dr. John Townsend
+
    ![Boundaries](screenshots/image5.jpg)
 
 6. The 5 AM Club by Robin Sharma
+
    ![The 5 AM Club](screenshots/image6.jpg)
 
 7. Rich Dad Poor Dad by Robert Kiyosaki
+
    ![Rich Dad Poor Dad](screenshots/image7.jpg)
 
 8. The Lean Startup by Eric Ries
+
    ![The Lean Startup](screenshots/image8.jpg)
 
 9. ADeep Work by Cal Newport
+
    ![Deep Work](screenshots/image9.webp)
-   
+
 10. Good Morning, Holy Spirit by Benny Hinn
+
     ![Good Morning Holy Spirit](screenshots/images10.jpg)
 
 ---
