@@ -4,10 +4,10 @@
 
 ## 1. Assignment Overview
 
-**Assignment:** Setup & Agentic Loop     
-**Estimated Time:** 60 minutes     
-**Difficulty:** Beginner      
-**Category:** Agentic AI, Claude Code Setup     
+**Assignment:** Setup & Agentic Loop  
+**Estimated Time:** 60 minutes  
+**Difficulty:** Beginner  
+**Category:** Agentic AI, Claude Code Setup
 
 ---
 
@@ -35,6 +35,7 @@ Every DevOps engineer working with agentic AI starts the same way — setting up
 ## 5. Important Instructions (Global Rules)
 
 **Key Rules:**
+
 - Full name must be visible in required screenshots
 - Do not expose sensitive information (keys, passwords, account IDs)
 - Follow screenshot requirements exactly as specified in tasks
@@ -64,12 +65,14 @@ Each task must be completed sequentially.
 **Goal:** Install the Claude Code CLI globally and authenticate with your Anthropic account.
 
 **Steps:**
+
 1. Open your terminal
 2. Run the install command below
 3. Verify the installation printed a version number
 4. Run `claude` to open Claude Code and authenticate through the browser
 
 **Commands:**
+
 ```bash
 npm install -g @anthropic-ai/claude-code
 claude --version
@@ -79,8 +82,14 @@ claude
 **Expected Output:** Version number printed. Browser opens for Anthropic login. After logging in, the Claude Code prompt appears in your terminal.
 
 **Screenshots Required:**
+
 - Screenshot 1 — Terminal showing `claude --version` with the version number visible
+
+![Claude version](../screenshots/AI_1.png)
+
 - Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
+
+![Claude authenticated](../screenshots/AI_2.png)
 
 ---
 
@@ -89,12 +98,14 @@ claude
 **Goal:** Get your own copy of the course project onto your machine.
 
 **Steps:**
+
 1. Open the [repository link](https://github.com/pravinmishraaws/Ultimate-Agentic-DevOps-with-Claude-Code) in your browser.
 2. Click **Fork → Create Fork**
 3. Clone your fork to your local machine
 4. Open the project in VS Code
 
 **Commands:**
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
 cd REPO_NAME
@@ -104,7 +115,10 @@ code .
 **Expected Output:** VS Code opens showing `index.html`, `style.css`, and the `images/` folder in the sidebar. No `.claude/` directory exists yet. (Remove the .claude folder, CLAUDE.md, and .github folder if they exist.)
 
 **Screenshots Required:**
+
 - Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
+
+![VS Code project open](../screenshots/AI_3.png)
 
 ---
 
@@ -113,6 +127,7 @@ code .
 **Goal:** Watch Claude Code work through Gather → Act → Verify on two real tasks.
 
 **Steps:**
+
 1. Open the Claude Code terminal inside VS Code (open the terminal panel, type `claude`)
 2. Ask this exact question: `"What files are in this project and what does each one do?"`
 3. Watch the tool calls — Claude reads files (Gather), forms its answer (Act), checks its understanding (Verify)
@@ -120,18 +135,28 @@ code .
 5. Watch Claude run a shell command to count them — this is Act in action
 
 **Commands (type in Claude Code terminal):**
+
 ```
 What files are in this project and what does each one do?
 How many lines of CSS does this project have?
 ```
 
 **Expected Output:**
+
 - Question 1: Claude lists the files and describes each one, showing it read them first
 - Question 2: Claude runs a command like `wc -l style.css` and reports the exact number
 
 **Screenshots Required:**
+
 - Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
+
+![Claude reading files](../screenshots/AI_4.png)
+
+![Claude reading files continued](../screenshots/AI_4a.png)
+
 - Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
+
+![CSS line count](../screenshots/AI_5.png)
 
 ---
 
@@ -146,6 +171,7 @@ In professional agentic DevOps teams, engineers do not use Claude Code blind. Be
 Complete all tasks in sequence.
 
 Your submission must include:
+
 - All 5 required screenshots
 - Your GitHub forked repository URL
 
@@ -166,10 +192,11 @@ Not required for this assignment.
 ## 12. Completion Checklist
 
 Before submission, verify:
-- [ ] Claude Code CLI installed and `claude --version` works
-- [ ] Claude Code authenticated — opens without asking for login again
-- [ ] Starter repo forked and cloned
-- [ ] All 5 screenshots captured and added to your GitHub Repository file
-- [ ] GitHub repo URL included
+
+- [x] Claude Code CLI installed and `claude --version` works
+- [x] Claude Code authenticated — opens without asking for login again
+- [x] Starter repo forked and cloned
+- [x] All 5 screenshots captured and added to your GitHub Repository file
+- [x] GitHub repo URL included
 
 ---
