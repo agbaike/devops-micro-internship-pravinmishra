@@ -84,12 +84,7 @@ claude
 **Screenshots Required:**
 
 - Screenshot 1 — Terminal showing `claude --version` with the version number visible
-
-![Claude version](../screenshots/AI_1.png)
-
 - Screenshot 2 — Claude Code authenticated and showing the terminal prompt (your name visible)
-
-![Claude authenticated](../screenshots/AI_2.png)
 
 ---
 
@@ -117,8 +112,6 @@ code .
 **Screenshots Required:**
 
 - Screenshot 3 — VS Code with the project open, file tree visible showing `index.html`, `style.css`, `images/`
-
-![VS Code project open](../screenshots/AI_3.png)
 
 ---
 
@@ -150,13 +143,7 @@ How many lines of CSS does this project have?
 
 - Screenshot 4 — Claude's response to the first question, showing it read the files (tool calls visible)
 
-![Claude reading files](../screenshots/AI_4.png)
-
-![Claude reading files continued](../screenshots/AI_4a.png)
-
 - Screenshot 5 — Claude's response to the second question, showing it ran a command and reported the line count
-
-![CSS line count](../screenshots/AI_5.png)
 
 ---
 
@@ -193,10 +180,10 @@ Not required for this assignment.
 
 Before submission, verify:
 
-- [x] Claude Code CLI installed and `claude --version` works
-- [x] Claude Code authenticated — opens without asking for login again
-- [x] Starter repo forked and cloned
-- [x] All 5 screenshots captured and added to your GitHub Repository file
-- [x] GitHub repo URL included
+- [ ] Claude Code CLI installed and `claude --version` works
+- [ ] Claude Code authenticated — opens without asking for login again
+- [ ] Starter repo forked and cloned
+- [ ] All 5 screenshots captured and added to your GitHub Repository file
+- [ ] GitHub repo URL included
 
 ---
