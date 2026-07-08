@@ -4,10 +4,10 @@
 
 ## 1. Assignment Overview
 
-**Assignment:** Skills                
-**Estimated Time:** 90 minutes             
-**Difficulty:** Intermediate          
-**Category:** Agentic AI, Skills               
+**Assignment:** Skills  
+**Estimated Time:** 90 minutes  
+**Difficulty:** Intermediate  
+**Category:** Agentic AI, Skills
 
 ---
 
@@ -36,6 +36,7 @@ Senior DevOps engineers on agentic teams do not type long prompts from memory ev
 ## 5. Important Instructions (Global Rules)
 
 **Key Rules:**
+
 - Full name must be visible in required screenshots
 - Do not expose sensitive information (keys, passwords, account IDs)
 - Follow screenshot requirements exactly as specified in tasks
@@ -63,11 +64,13 @@ Each task must be completed sequentially.
 **Goal:** Set up the `.claude/skills/` directory with all 4 skill folders.
 
 **Steps:**
+
 1. Open the terminal in VS Code
 2. Run the `mkdir` commands below
 3. Verify the structure is correct in the VS Code sidebar
 
 **Commands:**
+
 ```bash
 mkdir -p .claude/skills/scaffold-terraform
 mkdir -p .claude/skills/tf-plan
@@ -78,6 +81,7 @@ mkdir -p .claude/skills/deploy
 **Expected Output:** VS Code sidebar shows `.claude/skills/` with 4 folders inside it.
 
 **Screenshots Required:**
+
 - Screenshot 1 — VS Code sidebar showing `.claude/skills/` folder with all 4 subfolders visible
 
 ---
@@ -87,7 +91,8 @@ mkdir -p .claude/skills/deploy
 **Goal:** Place all 5 downloaded files into their correct folders.
 
 **Steps:**
-1. Download all 5 files from the Resources section of [Setup The Skills Files](https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/learn/lecture/54819705#overview) from Udemy. 
+
+1. Download all 5 files from the Resources section of [Setup The Skills Files](https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/learn/lecture/54819705#overview) from Udemy.
 2. Move each file to its correct location and rename it:
    - `scaffold-terraform-SKILL.md` → `.claude/skills/scaffold-terraform/SKILL.md`
    - `scaffold-terraform-template-spec.md` → `.claude/skills/scaffold-terraform/template-spec.md`
@@ -99,8 +104,10 @@ mkdir -p .claude/skills/deploy
 **Expected Output:** Each skill folder contains exactly the right files. `scaffold-terraform` has 2 files. The other 3 have 1 file each.
 
 **Screenshots Required:**
+
 - Screenshot 2 — `.claude/skills/scaffold-terraform/` open in VS Code showing both `SKILL.md` and `template-spec.md`
 - Screenshot 3 — `tf-plan/SKILL.md` frontmatter showing `allowed-tools: Bash, Read, Grep` (no Write) and `disable-model-invocation: true`
+
 ---
 
 ### Task 3 — Run /scaffold-terraform
@@ -108,12 +115,14 @@ mkdir -p .claude/skills/deploy
 **Goal:** Trigger the scaffold skill and watch Claude generate the full Terraform infrastructure files.
 
 **Steps:**
+
 1. Open the Claude Code terminal in VS Code
 2. Type `/scaffold-terraform`
 3. Watch Claude read the template spec and generate all the files
 4. Open the `terraform/` folder in VS Code and verify the files exist
 
 **Commands (in Claude Code):**
+
 ```
 /scaffold-terraform
 ```
@@ -121,6 +130,7 @@ mkdir -p .claude/skills/deploy
 **Expected Output:** Claude creates `main.tf`, `variables.tf`, `outputs.tf`, `providers.tf`, `backend.tf` inside a `terraform/` folder. Claude shows a summary checklist of what was created.
 
 **Screenshots Required:**
+
 - Screenshot 4 — Claude's response showing the scaffold complete with the file list
 - Screenshot 5 — VS Code sidebar showing the `terraform/` folder with all generated files inside
 
@@ -131,6 +141,7 @@ mkdir -p .claude/skills/deploy
 **Goal:** Initialize Terraform and trigger `/tf-plan` to observe Claude analyze the output.
 
 **Steps:**
+
 1. In the regular terminal (not Claude Code), navigate into the terraform folder and run `terraform init`
 2. Open the Claude Code terminal
 3. Type `/tf-plan`
@@ -139,11 +150,13 @@ mkdir -p .claude/skills/deploy
 **Note:** `terraform plan` will fail with an AWS authentication error because you do not have AWS credentials yet. That is expected and fine. The important thing is to see the skill trigger correctly and Claude analyze the error output — this is the Agentic Loop error-handling in action.
 
 **Commands:**
+
 ```bash
 cd terraform && terraform init
 ```
 
 Then in Claude Code:
+
 ```
 /tf-plan
 ```
@@ -151,6 +164,7 @@ Then in Claude Code:
 **Expected Output:** Claude runs `terraform plan`, receives output or an auth error, and analyzes it. If it errors, Claude explains why it failed and what would be needed to fix it.
 
 **Screenshots Required:**
+
 - Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
 ---
@@ -166,6 +180,7 @@ The tool restriction pattern in skills — giving each skill only the tools it a
 Complete all tasks in sequence.
 
 Your submission must include:
+
 - All 6 required screenshots
 - Your GitHub repo URL (skills committed and visible)
 
@@ -181,19 +196,26 @@ Full solution walkthrough → (LINK)
 ## 11. LinkedIn Requirement
 
 Create a LinkedIn post including:
+
 - Screenshot of the `terraform/` folder with all files generated by `/scaffold-terraform`
 - Caption: "**Just built my first agentic DevOps skill. One command generated an entire Terraform infrastructure. No manual code written.**"
 - Tag: #DMIByPravinMishra #AgenticAI #ClaudeCode #DevOps
 
 **Submit:**
+
 - LinkedIn post URL
+
+https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_dmibypravinmishra-agenticai-claudecode-activity-7480679200320942080-8mrW?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrZq7MBSujUP7_tlhkrVgRRMpJCFD9wPGY
+
 - Screenshot of the post
+  ![Post Link](../screenshots/link1.png)
 
 ---
 
 ## 12. Completion Checklist
 
 Before submission, verify:
+
 - [ ] All 4 skill folders created under `.claude/skills/`
 - [ ] All 5 files in their correct locations
 - [ ] `tf-plan/SKILL.md` shows no Write in allowed-tools (Screenshot 3)
@@ -201,4 +223,4 @@ Before submission, verify:
 - [ ] `terraform init` completed
 - [ ] `/tf-plan` was triggered and Claude analyzed the output
 - [ ] Skills committed and visible in GitHub repo
-.
+      .
