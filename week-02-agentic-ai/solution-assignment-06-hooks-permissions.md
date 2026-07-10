@@ -20,7 +20,7 @@ Create a team-level `settings.json` file with allow and deny rules for safe comm
 
 #### Screenshot 1 — settings.json permissions configuration
 
-Add your screenshot here.
+![settings.json permissions configuration](../week-02-agentic-ai/screenshots/AI6_1.png)
 
 ---
 
@@ -34,7 +34,7 @@ Add a hook that intercepts user prompts before Claude starts execution and block
 
 #### Screenshot 2 — settings.json showing UserPromptSubmit hook
 
-Add your screenshot here.
+![settings.json UserPromptSubmit hook](../week-02-agentic-ai/screenshots/AI6_2.png)
 
 ---
 
@@ -48,7 +48,7 @@ Extend `settings.json` with a PreToolUse hook that blocks dangerous Bash command
 
 #### Screenshot 3 — full settings.json with permissions and hooks
 
-Add your screenshot here.
+![Full settings.json with all sections](../week-02-agentic-ai/screenshots/AI6_3.png)
 
 ---
 
@@ -62,7 +62,7 @@ Verify that destructive prompts are blocked before Claude begins execution.
 
 #### Screenshot 4 — blocked prompt due to UserPromptSubmit hook
 
-Add your screenshot here.
+![Blocked prompt due to UserPromptSubmit hook](../week-02-agentic-ai/screenshots/AI6_4.png)
 
 ---
 
@@ -76,7 +76,7 @@ Verify that dangerous commands are intercepted before execution by the PreToolUs
 
 #### Screenshot 5 — PreToolUse hook blocking terraform destroy
 
-Add your screenshot here.
+![PreToolUse hook blocking terraform destroy](../week-02-agentic-ai/screenshots/AI6_5.png)
 
 ---
 
@@ -90,7 +90,7 @@ Add your screenshot here.
 
 ## GitHub Repository URL
 
-Paste your forked repository URL here:
+https://github.com/agbaike/Ultimate-Agentic-DevOps-with-Claude-Code
 
 `__________________________`
 
@@ -98,13 +98,13 @@ Paste your forked repository URL here:
 
 # Completion Checklist
 
-- [ ] `settings.json` created with permissions block
-- [ ] UserPromptSubmit hook added correctly
-- [ ] PreToolUse hook added correctly
-- [ ] Screenshot 3 shows full hooks + permissions configuration
-- [ ] Prompt-level destructive test was blocked (Screenshot 4)
-- [ ] Command-level `terraform destroy` was blocked (Screenshot 5)
-- [ ] `settings.json` committed and visible in GitHub repo
+- [x] `settings.json` created with permissions block
+- [x] UserPromptSubmit hook added correctly
+- [x] PreToolUse hook added correctly
+- [x] Screenshot 3 shows full hooks + permissions configuration
+- [x] Prompt-level destructive test was blocked (Screenshot 4)
+- [x] Command-level `terraform destroy` was blocked (Screenshot 5)
+- [x] `settings.json` committed and visible in GitHub repo
 
 ---
 
@@ -118,14 +118,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://pravinmishra.com/dmi  
-- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/  
-- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/  
-- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://pravinmishra.com/dmi
+- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
+- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
+- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
