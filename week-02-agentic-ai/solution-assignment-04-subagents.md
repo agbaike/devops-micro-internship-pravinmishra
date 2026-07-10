@@ -20,7 +20,9 @@ Create the `.claude/agents/` directory and add all required agent files.
 
 #### Screenshot 1 — Agents folder structure in VS Code
 
-Add your screenshot here.
+![Agents folder structure](../week-02-agentic-ai/screenshots/AI4_1.png)
+
+![Agents folder structure](../week-02-agentic-ai/screenshots/AI4_2.png)
 
 ---
 
@@ -34,19 +36,19 @@ Analyze the configuration differences between the three agents and demonstrate u
 
 #### 1. Why does the cost optimizer use Haiku instead of Sonnet?
 
-Add your answer here...
+The cost optimizer's job is fairly straightforward, it just needs to check things like CloudFront pricing tiers or S3 storage classes and flag where money could be saved. It does not need deep reasoning, just quick pattern spotting. So Haiku, being faster and lighter, gets the job done quickly without needing the extra power that Sonnet offers, which is why the cost check finishes so much faster than the security audit.
 
 ---
 
 #### 2. Why does the security auditor NOT have Write in its tools list?
 
-Add your answer here...
+The security auditor's only job is to look at the Terraform files and point out anything risky, it is not supposed to fix or change anything on its own. Leaving Write out of its tools means it can never accidentally edit or break the actual infrastructure code while it is reviewing it. This is the principle of least privilege in action, an auditor should only ever have the power to observe, never to alter what it is checking.
 
 ---
 
 #### 3. Why does the tf-writer use `inherit` instead of a specific model?
 
-Add your answer here...
+The tf-writer has a more creative and demanding task, actually writing solid, production ready Terraform code, so it makes sense for it to use whatever model is currently powering the main session instead of being locked to just one. Using inherit means this agent automatically benefits from the strongest reasoning available at the time, which matters more here since writing good infrastructure code takes more thought than simply spotting known patterns.
 
 ---
 
@@ -54,13 +56,13 @@ Add your answer here...
 
 #### Screenshot 2 — security-auditor.md frontmatter
 
-Add your screenshot here.
+![security-auditor.md frontmatter](../week-02-agentic-ai/screenshots/AI4_3.png)
 
 ---
 
 #### Screenshot 3 — cost-optimizer.md frontmatter
 
-Add your screenshot here.
+![cost-optimizer.md frontmatter](../week-02-agentic-ai/screenshots/AI4_3a.png)
 
 ---
 
@@ -74,13 +76,13 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — Security auditor delegation triggered
 
-Add your screenshot here.
+![Security auditor delegation triggered](../week-02-agentic-ai/screenshots/AI4_4.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-Add your screenshot here.
+![Cost optimization report output](../week-02-agentic-ai/screenshots/AI4_5.png)
 
 ---
 
@@ -94,7 +96,7 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — Cost optimization report output
 
-Add your screenshot here.
+![Cost optimization report output continued](../week-02-agentic-ai/screenshots/AI4_6.png)
 
 ---
 
@@ -109,7 +111,7 @@ Add your screenshot here.
 
 ## Google Doc Link
 
-Paste your Google Doc URL here:
+https://docs.google.com/document/d/1Vot0-c43rRFNnxFhuxgZ0ommLrNskBVSClOqHf5bPKY/edit?usp=sharing
 
 `__________________________`
 
@@ -117,7 +119,7 @@ Paste your Google Doc URL here:
 
 ## GitHub Repository URL
 
-Paste your forked repository URL here:
+https://github.com/agbaike/Ultimate-Agentic-DevOps-with-Claude-Code
 
 `__________________________`
 
@@ -125,16 +127,16 @@ Paste your forked repository URL here:
 
 # Completion Checklist
 
-- [ ] `.claude/agents/` folder contains all 3 agent files
-- [ ] Screenshot 2 shows correct `security-auditor.md` configuration
-- [ ] Screenshot 3 shows correct `cost-optimizer.md` configuration
-- [ ] All 3 written answers completed in Google Doc
-- [ ] Security auditor executed successfully
-- [ ] Cost optimizer executed successfully
-- [ ] Security report is visible with findings
-- [ ] Cost report is visible with recommendations
-- [ ] All required screenshots added
-- [ ] GitHub repo updated with agents
+- [x] `.claude/agents/` folder contains all 3 agent files
+- [x] Screenshot 2 shows correct `security-auditor.md` configuration
+- [x] Screenshot 3 shows correct `cost-optimizer.md` configuration
+- [x] All 3 written answers completed in Google Doc
+- [x] Security auditor executed successfully
+- [x] Cost optimizer executed successfully
+- [x] Security report is visible with findings
+- [x] Cost report is visible with recommendations
+- [x] All required screenshots added
+- [x] GitHub repo updated with agents
 
 ---
 
@@ -148,14 +150,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://pravinmishra.com/dmi  
-- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/  
-- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/  
-- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://pravinmishra.com/dmi
+- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
+- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
+- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
