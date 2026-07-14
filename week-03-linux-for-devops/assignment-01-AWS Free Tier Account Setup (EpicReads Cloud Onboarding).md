@@ -20,19 +20,19 @@ Demonstrate understanding of AWS basics and Free Tier usage by answering the fol
 
 #### Question 1 — What is an AWS account, and why do you need it at this stage?
 
-Write your answer here.
+I need an AWS account right now mainly so I can actually practice hands-on instead of just reading theory. This course keeps giving us real exercises to deploy, and none of that works without an account. Longer term, I want to be able to build my own real projects too, so getting comfortable with this now, at this early stage, feels like the right foundation to start from.
 
 ---
 
 #### Question 2 — What is AWS Free Tier, and how long does it last?
 
-Write your answer here.
+AWS Free Tier is a program that lets new AWS customers try out cloud services without paying anything at first. It used to give new accounts 12 months of free usage on many services, but that changed in mid-2025. Now, when someone signs up, the person gets $100 in credit right away, and can earn up to $100 more by completing a few starter tasks, up to $200 in total. Should the person pick the Free plan, the account automatically closes after 6 months, or once that credit runs out, whichever comes first. There are also separate 'Always Free' services that never expire at all, no matter which plan someone picks, as long as usage stays within their limits."
 
 ---
 
 #### Question 3 — Name three AWS Free Tier services and their free usage limits.
 
-Write your answer here.
+Three services I looked into are EC2, S3, and DynamoDB. EC2 is basically a virtual server, and in the past you got 750 hours a month of a small one for free, for a whole year. Now that's changed a bit, it comes out of the sign up credit instead. S3 is for storage, same thing, it used to be 5GB free for a year, now it also pulls from that credit, but there's still a small amount that stays free regardless. DynamoDB is the one I liked most when I read about it, it's a database, and it's actually free forever, not just for a year, you get 25GB of storage and enough capacity for a small app, and that doesn't expire no matter when you signed up.
 
 ---
 
@@ -56,7 +56,7 @@ Confirm that your AWS account setup is complete by navigating to the Account sec
 
 #### Screenshot 1 — AWS Account page showing account name (email may be blurred)
 
-Add your screenshot here.
+![AWS Account page](../week-03-linux-for-devops/screenshots/L1_1.png)
 
 ---
 
@@ -70,11 +70,11 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1 answers written in own words
-- [ ] AWS Free Tier account created successfully
-- [ ] Signed in to AWS Management Console
-- [ ] Screenshot of AWS Account page captured (full name visible, no sensitive data)
-- [ ] All required screenshots added to repository
+- [x] Task 1 answers written in own words
+- [x] AWS Free Tier account created successfully
+- [x] Signed in to AWS Management Console
+- [x] Screenshot of AWS Account page captured (full name visible, no sensitive data)
+- [x] All required screenshots added to repository
 
 ---
 
@@ -88,14 +88,14 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ## 📌 Resources
 
-- 🌐 DMI Official Website: https://pravinmishra.com/dmi  
-- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/  
-- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/  
-- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/  
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho  
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/  
+- 🌐 DMI Official Website: https://pravinmishra.com/dmi
+- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
+- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
+- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
 - 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-*This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track.*
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
