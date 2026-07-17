@@ -1,4 +1,4 @@
-# Assignment 3 — Production Maintenance Drill (OPS Checklist)
+﻿# Assignment 3 - Production Maintenance Drill (OPS Checklist)
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -6,11 +6,11 @@ Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
 ## Purpose
 
-In this assignment, you will treat your already deployed React application (on Ubuntu VM with Nginx) as a live production system. You will perform structured operational checks covering network validation, service health, log analysis, resource monitoring, configuration verification, and incident simulation with recovery — mirroring real on-call DevOps responsibilities.
+In this assignment, you will treat your already deployed React application (on Ubuntu VM with Nginx) as a live production system. You will perform structured operational checks covering network validation, service health, log analysis, resource monitoring, configuration verification, and incident simulation with recovery - mirroring real on-call DevOps responsibilities.
 
 ---
 
-# Task 1 — Server Access & Networking Validation
+# Task 1 - Server Access & Networking Validation
 
 ## Goal
 
@@ -18,25 +18,25 @@ Verify that the deployed React application is reachable from the browser and con
 
 ### Evidence
 
-#### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
+#### Screenshot 1 - Browser showing the React app with your Full Name visible on the UI
 
-![browser showing app](../week-03-linux-for-devops/screenshots/L3_1.png)
-
----
-
-#### Screenshot 2 — Output of `ip a`
-
-![ip a output](../week-03-linux-for-devops/screenshots/L3_2.png)
+![browser showing app](../week-03-linux-and-bash-for-devops/screenshots/L3_1.png)
 
 ---
 
-#### Screenshot 3 — Output of `sudo ss -tulpen`
+#### Screenshot 2 - Output of `ip a`
 
-![ss tulpen output](../week-03-linux-for-devops/screenshots/L3_3.png)
+![ip a output](../week-03-linux-and-bash-for-devops/screenshots/L3_2.png)
 
 ---
 
-#### Screenshot 4 — Output of `sudo ufw status`
+#### Screenshot 3 - Output of `sudo ss -tulpen`
+
+![ss tulpen output](../week-03-linux-and-bash-for-devops/screenshots/L3_3.png)
+
+---
+
+#### Screenshot 4 - Output of `sudo ufw status`
 
 ![sudo ufw status](image-2.png)
 
@@ -64,7 +64,7 @@ No, nothing unexpected came up. Besides nginx on port 80 and SSH on port 22, the
 
 ---
 
-# Task 2 — Service Health & Systemd Validation (Nginx)
+# Task 2 - Service Health & Systemd Validation (Nginx)
 
 ## Goal
 
@@ -72,21 +72,21 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 ### Evidence
 
-#### Screenshot 1 — Output of `systemctl status nginx --no-pager`
+#### Screenshot 1 - Output of `systemctl status nginx --no-pager`
 
-![ufw status](../week-03-linux-for-devops/screenshots/L3_4.png)
-
----
-
-#### Screenshot 2 — Output of `sudo nginx -t`
-
-![nginx -t syntax ok](../week-03-linux-for-devops/screenshots/L3_5.png)
+![ufw status](../week-03-linux-and-bash-for-devops/screenshots/L3_4.png)
 
 ---
 
-#### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
+#### Screenshot 2 - Output of `sudo nginx -t`
 
-![ss lptn port 80](../week-03-linux-for-devops/screenshots/L3_6.png)
+![nginx -t syntax ok](../week-03-linux-and-bash-for-devops/screenshots/L3_5.png)
+
+---
+
+#### Screenshot 3 - Output of `sudo ss -lptn '( sport = :80 )'`
+
+![ss lptn port 80](../week-03-linux-and-bash-for-devops/screenshots/L3_6.png)
 
 ---
 
@@ -106,7 +106,7 @@ My plan would be simple. First, check sudo nginx -t to see if the config file it
 
 ---
 
-# Task 3 — Logs & Request Trace
+# Task 3 - Logs & Request Trace
 
 ## Goal
 
@@ -114,21 +114,21 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 ### Evidence
 
-#### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
+#### Screenshot 1 - Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-![access log](../week-03-linux-for-devops/screenshots/L3_8.png)
-
----
-
-#### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
-
-![error log](../week-03-linux-for-devops/screenshots/L3_9.png)
+![access log](../week-03-linux-and-bash-for-devops/screenshots/L3_8.png)
 
 ---
 
-#### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
+#### Screenshot 2 - Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-![journalctl nginx](../week-03-linux-for-devops/screenshots/L3_7.png)
+![error log](../week-03-linux-and-bash-for-devops/screenshots/L3_9.png)
+
+---
+
+#### Screenshot 3 - Output of `sudo journalctl -u nginx --no-pager -n 50`
+
+![journalctl nginx](../week-03-linux-and-bash-for-devops/screenshots/L3_7.png)
 
 ---
 
@@ -138,7 +138,7 @@ Answer the following in your own words:
 
 **1. Were there any errors in the logs?**
 
-- If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
+- If yes, mention 1-2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
 The error log itself was basically empty, it only had one line saying 'using inherited sockets,' which isn't really an error, it's just a normal notice from when nginx restarted. But looking at the access log, I did see some interesting entries. On July 14, there's a bunch of requests from one IP address trying to find files like .env, .env.backup, and .env.production. These all came back as 404, meaning not found, which is good, it means those files don't exist on my server. This looks like an automated bot scanning for exposed secret files, something that happens constantly on the internet to any public server, not something specific to me doing anything wrong.
@@ -157,7 +157,7 @@ Yes, I could see my own curl requests right there in the log, shown as ::1, whic
 
 ---
 
-# Task 4 — System Resource Health Check (Capacity Red Flags)
+# Task 4 - System Resource Health Check (Capacity Red Flags)
 
 ## Goal
 
@@ -165,27 +165,27 @@ Assess server capacity and detect potential performance or failure risks.
 
 ### Evidence
 
-#### Screenshot 1 — Output of `uptime`
+#### Screenshot 1 - Output of `uptime`
 
-![uptime](../week-03-linux-for-devops/screenshots/L3_12.png)
-
----
-
-#### Screenshot 2 — Output of `free -h`
-
-![free -h](../week-03-linux-for-devops/screenshots/L3_13.png)
+![uptime](../week-03-linux-and-bash-for-devops/screenshots/L3_12.png)
 
 ---
 
-#### Screenshot 3 — Output of `df -h`
+#### Screenshot 2 - Output of `free -h`
 
-![df -h](../week-03-linux-for-devops/screenshots/L3_14.png)
+![free -h](../week-03-linux-and-bash-for-devops/screenshots/L3_13.png)
 
 ---
 
-#### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
+#### Screenshot 3 - Output of `df -h`
 
-![du -sh var](../week-03-linux-for-devops/screenshots/L3_15.png)
+![df -h](../week-03-linux-and-bash-for-devops/screenshots/L3_14.png)
+
+---
+
+#### Screenshot 4 - Output of `sudo du -sh /var/* | sort -h`
+
+![du -sh var](../week-03-linux-and-bash-for-devops/screenshots/L3_15.png)
 
 ---
 
@@ -205,7 +205,7 @@ If the disk fills up completely, the server basically can't create or save anyth
 
 ---
 
-# Task 5 — Configuration & Deployment Verification
+# Task 5 - Configuration & Deployment Verification
 
 ## Goal
 
@@ -213,21 +213,21 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 ### Evidence
 
-#### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
+#### Screenshot 1 - Output of `ls -lah /var/www/html | head -n 20`
 
-![ls var www html](../week-03-linux-for-devops/screenshots/L3_16.png)
-
----
-
-#### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
-
-![grep deployed by](../week-03-linux-for-devops/screenshots/L3_17.png)
+![ls var www html](../week-03-linux-and-bash-for-devops/screenshots/L3_16.png)
 
 ---
 
-#### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
+#### Screenshot 2 - Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-![grep try_files](../week-03-linux-for-devops/screenshots/L3_18.png)
+![grep deployed by](../week-03-linux-and-bash-for-devops/screenshots/L3_17.png)
+
+---
+
+#### Screenshot 3 - Output of `grep -n "try_files" /etc/nginx/sites-available/default`
+
+![grep try_files](../week-03-linux-and-bash-for-devops/screenshots/L3_18.png)
 
 ---
 
@@ -241,7 +241,7 @@ I confirmed it by searching directly inside the compiled JavaScript file that ng
 
 ---
 
-# Task 6 — Nginx Configuration Failure Simulation
+# Task 6 - Nginx Configuration Failure Simulation
 
 ## Goal
 
@@ -249,21 +249,21 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 ### Evidence
 
-#### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
+#### Screenshot 1 - Output of `sudo nginx -t` showing the syntax error (broken config)
 
-![nginx -t syntax error](../week-03-linux-for-devops/screenshots/L3_19.png)
-
----
-
-#### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
-
-![nginx -t syntax ok fixed](../week-03-linux-for-devops/screenshots/L3_20.png)
+![nginx -t syntax error](../week-03-linux-and-bash-for-devops/screenshots/L3_19.png)
 
 ---
 
-#### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
+#### Screenshot 2 - Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-![curl 200 ok recovery](../week-03-linux-for-devops/screenshots/L3_22.png)
+![nginx -t syntax ok fixed](../week-03-linux-and-bash-for-devops/screenshots/L3_20.png)
+
+---
+
+#### Screenshot 3 - Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
+
+![curl 200 ok recovery](../week-03-linux-and-bash-for-devops/screenshots/L3_22.png)
 
 ---
 
@@ -289,7 +289,7 @@ The biggest habit that prevents this is always running sudo nginx -t after editi
 
 ---
 
-# Task 7 — Web Application Failure Simulation
+# Task 7 - Web Application Failure Simulation
 
 ## Goal
 
@@ -297,13 +297,13 @@ Simulate missing deployment content and recover the application safely.
 
 ### Evidence
 
-#### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
+#### Screenshot 1 - Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-![curl 403 failure](../week-03-linux-for-devops/screenshots/L3_21.png)
+![curl 403 failure](../week-03-linux-and-bash-for-devops/screenshots/L3_21.png)
 
 ---
 
-#### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
+#### Screenshot 2 - Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
 ## ![curl 200 ok recovery](L3_22.png)
 
@@ -329,7 +329,7 @@ The main thing that saved me here was having a backup before making any risky ch
 
 ---
 
-# Task 8 — Security & Reliability Review
+# Task 8 - Security & Reliability Review
 
 ## Goal
 
@@ -381,7 +381,7 @@ https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs
 
 ---
 
-#### Screenshot — Published LinkedIn post
+#### Screenshot - Published LinkedIn post
 
 ![alt text](image-1.png)
 
@@ -411,7 +411,7 @@ https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs
 
 ---
 
-## 📌 About DMI & CloudAdvisory
+## ðŸ“Œ About DMI & CloudAdvisory
 
 DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
 
@@ -419,16 +419,16 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-## 📌 Resources
+## ðŸ“Œ Resources
 
-- 🌐 DMI Official Website: https://pravinmishra.com/dmi
-- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
-- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
-- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
-- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+- ðŸŒ DMI Official Website: https://pravinmishra.com/dmi
+- ðŸŽ“ DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
+- ðŸŽ“ Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
+- ðŸŽ“ DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
+- â–¶ï¸ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- ðŸ”— Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
+- ðŸ¢ CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 - Agentic AI Track._

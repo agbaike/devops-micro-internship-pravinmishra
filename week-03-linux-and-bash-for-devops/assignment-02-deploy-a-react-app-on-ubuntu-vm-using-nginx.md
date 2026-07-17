@@ -1,4 +1,4 @@
-# Assignment 2 — Deploy a React App on Ubuntu VM Using Nginx
+﻿# Assignment 2 - Deploy a React App on Ubuntu VM Using Nginx
 
 Part of the DevOps Micro Internship (DMI) Cohort 3 with Agentic AI
 
@@ -10,7 +10,7 @@ In this assignment, you will deploy a React application on an Ubuntu EC2 instanc
 
 ---
 
-# Task 1 — Setup Environment (Node.js & npm)
+# Task 1 - Setup Environment (Node.js & npm)
 
 ## Goal
 
@@ -18,13 +18,13 @@ Install Node.js and npm on the Ubuntu VM and verify the installation.
 
 ### Evidence
 
-#### Screenshot 1 — Output of `node -v && npm -v` showing installed versions
+#### Screenshot 1 - Output of `node -v && npm -v` showing installed versions
 
-![node and npm versions](../week-03-linux-for-devops/screenshots/L2_1.png)
+![node and npm versions](../week-03-linux-and-bash-for-devops/screenshots/L2_1.png)
 
 ---
 
-# Task 2 — Setup Environment (Nginx)
+# Task 2 - Setup Environment (Nginx)
 
 ## Goal
 
@@ -32,13 +32,13 @@ Install Nginx, start the service, and confirm it is running.
 
 ### Evidence
 
-#### Screenshot 2 — Output of `systemctl status nginx --no-pager` showing Active (running)
+#### Screenshot 2 - Output of `systemctl status nginx --no-pager` showing Active (running)
 
-![nginx status](../week-03-linux-for-devops/screenshots/L2_2.png)
+![nginx status](../week-03-linux-and-bash-for-devops/screenshots/L2_2.png)
 
 ---
 
-# Task 3 — Clone React Application
+# Task 3 - Clone React Application
 
 ## Goal
 
@@ -46,13 +46,13 @@ Clone the project repository and verify the project files are present.
 
 ### Evidence
 
-#### Screenshot 3 — Output of `ls` inside the `my-react-app` directory showing project files
+#### Screenshot 3 - Output of `ls` inside the `my-react-app` directory showing project files
 
-![project files](../week-03-linux-for-devops/screenshots/L2_3.png)
+![project files](../week-03-linux-and-bash-for-devops/screenshots/L2_3.png)
 
 ---
 
-# Task 4 — Modify Application (Personalization)
+# Task 4 - Modify Application (Personalization)
 
 ## Goal
 
@@ -60,13 +60,13 @@ Update `App.js` with your full name and the current date.
 
 ### Evidence
 
-#### Screenshot 4 — `nano App.js` open showing your full name and date filled in
+#### Screenshot 4 - `nano App.js` open showing your full name and date filled in
 
-![nano App.js personalized](../week-03-linux-for-devops/screenshots/L2_4.png)
+![nano App.js personalized](../week-03-linux-and-bash-for-devops/screenshots/L2_4.png)
 
 ---
 
-# Task 5 — Build React Application
+# Task 5 - Build React Application
 
 ## Goal
 
@@ -74,13 +74,13 @@ Install dependencies and generate the production build.
 
 ### Evidence
 
-#### Screenshot 5 — Output of `ls` inside `my-react-app` showing the `build/` folder generated
+#### Screenshot 5 - Output of `ls` inside `my-react-app` showing the `build/` folder generated
 
-![build folder generated](../week-03-linux-for-devops/screenshots/L2_5.png)
+![build folder generated](../week-03-linux-and-bash-for-devops/screenshots/L2_5.png)
 
 ---
 
-# Task 6 — Deploy React Build to Nginx Web Root
+# Task 6 - Deploy React Build to Nginx Web Root
 
 ## Goal
 
@@ -88,13 +88,13 @@ Copy the production build files to the Nginx web root directory.
 
 ### Evidence
 
-#### Screenshot 6 — Output of `ls /var/www/html/` showing the deployed build contents
+#### Screenshot 6 - Output of `ls /var/www/html/` showing the deployed build contents
 
-![deployed build contents](../week-03-linux-for-devops/screenshots/L2_6.png)
+![deployed build contents](../week-03-linux-and-bash-for-devops/screenshots/L2_6.png)
 
 ---
 
-# Task 7 — Configure Nginx for React Application
+# Task 7 - Configure Nginx for React Application
 
 ## Goal
 
@@ -102,23 +102,23 @@ Apply Nginx configuration for React routing and confirm the service is active.
 
 ### Evidence
 
-#### Screenshot 7 — Output of `systemctl is-active nginx` showing `active`
+#### Screenshot 7 - Output of `systemctl is-active nginx` showing `active`
 
-![nginx active](../week-03-linux-for-devops/screenshots/L2_7.png)
-
----
-
-#### Screenshot 8 — Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
-
-![nginx config](../week-03-linux-for-devops/screenshots/L2_8a.png)
-
-![nginx config continued](../week-03-linux-for-devops/screenshots/L2_8b.png)
-
-![nginx config continued](../week-03-linux-for-devops/screenshots/L2_8c.png)
+![nginx active](../week-03-linux-and-bash-for-devops/screenshots/L2_7.png)
 
 ---
 
-# Task 8 — Test Deployment
+#### Screenshot 8 - Output of `cat /etc/nginx/sites-available/default` showing the Nginx config
+
+![nginx config](../week-03-linux-and-bash-for-devops/screenshots/L2_8a.png)
+
+![nginx config continued](../week-03-linux-and-bash-for-devops/screenshots/L2_8b.png)
+
+![nginx config continued](../week-03-linux-and-bash-for-devops/screenshots/L2_8c.png)
+
+---
+
+# Task 8 - Test Deployment
 
 ## Goal
 
@@ -126,15 +126,15 @@ Verify the React application is publicly accessible via the server's public IP.
 
 ### Evidence
 
-#### Screenshot 9 — Output of `curl ifconfig.me` showing the server's public IP address
+#### Screenshot 9 - Output of `curl ifconfig.me` showing the server's public IP address
 
-![public IP](../week-03-linux-for-devops/screenshots/L2_9.png)
+![public IP](../week-03-linux-and-bash-for-devops/screenshots/L2_9.png)
 
 ---
 
-#### Screenshot 10 — Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
+#### Screenshot 10 - Browser showing the deployed React app at `http://<public-ip>` with your name and date visible
 
-![live deployed app](../week-03-linux-for-devops/screenshots/L2_10.png)
+![live deployed app](../week-03-linux-and-bash-for-devops/screenshots/L2_10.png)
 
 ---
 
@@ -150,7 +150,7 @@ https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs
 
 ---
 
-#### Screenshot — LinkedIn post showing the deployed application
+#### Screenshot - LinkedIn post showing the deployed application
 
 ![alt text](image.png)
 
@@ -180,7 +180,7 @@ https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs
 
 ---
 
-## 📌 About DMI & CloudAdvisory
+## ðŸ“Œ About DMI & CloudAdvisory
 
 DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
 
@@ -188,16 +188,16 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-## 📌 Resources
+## ðŸ“Œ Resources
 
-- 🌐 DMI Official Website: https://pravinmishra.com/dmi
-- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
-- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
-- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
-- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
-- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
-- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+- ðŸŒ DMI Official Website: https://pravinmishra.com/dmi
+- ðŸŽ“ DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
+- ðŸŽ“ Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
+- ðŸŽ“ DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
+- â–¶ï¸ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- ðŸ”— Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
+- ðŸ¢ CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
-_This submission is part of DevOps Micro Internship (DMI) Cohort 3 — Agentic AI Track._
+_This submission is part of DevOps Micro Internship (DMI) Cohort 3 - Agentic AI Track._
