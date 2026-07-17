@@ -152,7 +152,7 @@ https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs
 
 #### Screenshot - LinkedIn post showing the deployed application
 
-![alt text](image.png)
+![LinkedIn post](../week-03-linux-and-bash-for-devops/screenshots/image.png)
 
 ---
 
@@ -180,7 +180,7 @@ https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs
 
 ---
 
-## ðŸ“Œ About DMI & CloudAdvisory
+## 📌 About DMI & CloudAdvisory
 
 DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
 
@@ -188,15 +188,15 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-## ðŸ“Œ Resources
+## 📌 Resources
 
-- ðŸŒ DMI Official Website: https://pravinmishra.com/dmi
-- ðŸŽ“ DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
-- ðŸŽ“ Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
-- ðŸŽ“ DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
-- â–¶ï¸ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
-- ðŸ”— Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
-- ðŸ¢ CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+- 🌐 DMI Official Website: https://pravinmishra.com/dmi
+- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
+- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
+- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
+- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 

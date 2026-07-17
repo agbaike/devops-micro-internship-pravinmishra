@@ -38,7 +38,7 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 4 - Output of `sudo ufw status`
 
-![sudo ufw status](image-2.png)
+![sudo ufw status](../week-03-linux-and-bash-for-devops/screenshots/image-2.png)
 
 ---
 
@@ -305,7 +305,7 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 2 - Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-## ![curl 200 ok recovery](L3_22.png)
+## ![curl 200 ok recovery](../week-03-linux-and-bash-for-devops/screenshots/L3_22.png)
 
 ### Notes
 
@@ -375,15 +375,13 @@ Cloud resources like EC2 instances cost money for every hour they're running, wh
 
 #### LinkedIn Post URL
 
-https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs-ubuntu-share-7483849736383557633-p3m_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrZq7MBSujUP7_tlhkrVgRRMpJCFD9wPGY
-
-`Add your URL here`
+https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs-ubuntu-share-7483849736383557633-p3m_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrZq7MBSujUP7_tlhkrVgRRMpJCFD9wPGY`
 
 ---
 
 #### Screenshot - Published LinkedIn post
 
-![alt text](image-1.png)
+![linkedin post](../week-03-linux-and-bash-for-devops/screenshots/image-1.png)
 
 ---
 
@@ -411,7 +409,7 @@ https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs
 
 ---
 
-## ðŸ“Œ About DMI & CloudAdvisory
+## 📌 About DMI & CloudAdvisory
 
 DevOps Micro Internship (DMI) is a project-based DevOps program run by Pravin Mishra (The CloudAdvisory) focused on real-world execution, systems thinking, and career readiness.
 
@@ -419,15 +417,15 @@ It helps learners build strong DevOps foundations with hands-on experience.
 
 ---
 
-## ðŸ“Œ Resources
+## 📌 Resources
 
-- ðŸŒ DMI Official Website: https://pravinmishra.com/dmi
-- ðŸŽ“ DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
-- ðŸŽ“ Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
-- ðŸŽ“ DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
-- â–¶ï¸ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
-- ðŸ”— Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
-- ðŸ¢ CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
+- 🌐 DMI Official Website: https://pravinmishra.com/dmi
+- 🎓 DevOps for Beginners (Udemy): https://www.udemy.com/course/devops-for-beginners-docker-k8s-cloud-cicd-4-projects/
+- 🎓 Agentic AI DevOps with Claude Code: https://www.udemy.com/course/ultimate-agentic-ai-devops-with-claude-code/
+- 🎓 DevOps with Claude Code: Terraform, EKS, ArgoCD & Helm: https://www.udemy.com/course/devops-with-claude-code-terraform-eks-argocd-helm/
+- ▶️ YouTube Playlist: https://www.youtube.com/playlist?list=PLFeSNDtI4Cho
+- 🔗 Pravin Mishra (LinkedIn): https://www.linkedin.com/in/pravin-mishra-aws-trainer/
+- 🏢 CloudAdvisory (LinkedIn): https://www.linkedin.com/company/thecloudadvisory/
 
 ---
 
