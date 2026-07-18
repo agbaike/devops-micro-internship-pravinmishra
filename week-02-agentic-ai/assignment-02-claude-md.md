@@ -84,9 +84,7 @@ Verify that Claude’s behavior changes after adding `CLAUDE.md` by running a ne
 
 ## GitHub Repository URL
 
-https://github.com/agbaike/Ultimate-Agentic-DevOps-with-Claude-Code.git
-
-`Add your URL here`
+https://github.com/agbaike/Ultimate-Agentic-DevOps-with-Claude-Code
 
 ---
 

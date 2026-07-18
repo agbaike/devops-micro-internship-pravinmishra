@@ -121,8 +121,6 @@ https://docs.google.com/document/d/1Vot0-c43rRFNnxFhuxgZ0ommLrNskBVSClOqHf5bPKY/
 
 https://github.com/agbaike/Ultimate-Agentic-DevOps-with-Claude-Code
 
-`Add your URL here`
-
 ---
 
 # Completion Checklist
