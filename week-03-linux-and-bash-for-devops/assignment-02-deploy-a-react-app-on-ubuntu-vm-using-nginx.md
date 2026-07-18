@@ -144,9 +144,7 @@ Verify the React application is publicly accessible via the server's public IP.
 
 #### LinkedIn Post URL
 
-https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs-ubuntu-share-7482796094213779456-Z5A0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrZq7MBSujUP7_tlhkrVgRRMpJCFD9wPGY
-
-`Add your URL here`
+`https://www.linkedin.com/posts/favour-iruoghene-agbaike-6177ab236_devops-reactjs-ubuntu-share-7482796094213779456-Z5A0/?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrZq7MBSujUP7_tlhkrVgRRMpJCFD9wPGY`
 
 ---
 
