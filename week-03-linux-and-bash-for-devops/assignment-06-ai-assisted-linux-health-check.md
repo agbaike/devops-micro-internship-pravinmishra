@@ -180,13 +180,15 @@ Separating each check into its own function keeps the script organized and easy 
 
 **4. What is the purpose of `$(...)` in this script?**
 
-$(...) is command substitution, it runs the command inside the parentheses and captures its output as a value that can be stored in a variable. For example, http_code=$(curl -s -o /dev/null -w "%{http_code}" http://localhost) runs the curl command and stores the resulting HTTP status code directly into the http_code variable, so it can be checked in the if condition afterward.
+This is a command substitution, it runs the command inside the parentheses and captures its output as a value that can be stored in a variable. For example, http_code=$(curl -s -o /dev/null -w "%{http_code}" http://localhost) runs the curl command and stores the resulting HTTP status code directly into the http_code variable, so it can be checked in the if condition afterward.
 
 ---
 
 **5. Why does the script use different exit codes for HEALTHY, WARN, and FAIL?**
 
-## Different exit codes let other tools or scripts (or a human reviewing logs later) immediately know the outcome of the triage run without having to read the full text output. An exit code of 0 means everything passed, 1 means something needs attention but isn't critical, and 2 means something has actually failed, this is a standard convention in Linux that lets automation pipelines make decisions based on the exit code alone.
+Different exit codes let other tools or scripts (or a human reviewing logs later) immediately know the outcome of the triage run without having to read the full text output. An exit code of 0 means everything passed, 1 means something needs attention but isn't critical, and 2 means something has actually failed, this is a standard convention in Linux that lets automation pipelines make decisions based on the exit code alone.
+
+---
 
 # Task 5 — Run and Understand the Healthy-State Report
 
@@ -334,7 +336,9 @@ No, Claude only explained the evidence and suggested a possible recovery command
 
 **4. Which phase of the Agentic Loop is represented by the Bash report?**
 
-## The Gather phase. The Bash script simply collects raw factual evidence, service status, port status, HTTP response code, without any interpretation or judgment involved.
+The Gather phase. The Bash script simply collects raw factual evidence, service status, port status, HTTP response code, without any interpretation or judgment involved.
+
+---
 
 **5. Which phase is represented by Claude's explanation?**
 
